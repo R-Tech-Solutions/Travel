@@ -75,6 +75,7 @@ WSGI_APPLICATION = 'travelFinalApi.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+#localhost
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
@@ -86,17 +87,29 @@ WSGI_APPLICATION = 'travelFinalApi.wsgi.application'
 #     }
 # }
 
+#https://citytoursrilanka.com/
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'postgres',  
+#         'PASSWORD': 'HY2TsOozWipIXMGMD0XL',
+#         'HOST': 'travel-site.csj8qkgam2pb.us-east-1.rds.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
+
+#echotourslanka.lk
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
         'USER': 'postgres',  
-        'PASSWORD': 'HY2TsOozWipIXMGMD0XL',
-        'HOST': 'travel-site.csj8qkgam2pb.us-east-1.rds.amazonaws.com',
+        'PASSWORD': 'vP7IZVDOYpgaTrtqft4p',
+        'HOST': 'database-1.csj8qkgam2pb.us-east-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -144,12 +157,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-    "http://localhost:8000",
-    "http://127.0.0.1:8000",
-    "http://13.233.254.191",
-    "https://citytourslanka.com",
+    # "http://localhost:5173",
+    # "http://127.0.0.1:5173",
+    # "http://localhost:8000",
+    # "http://127.0.0.1:8000",
+    # "http://13.233.254.191",
+    # "https://citytourslanka.com",
+    "https://echotourslanka.lk",
+    "https://admin.echotourslanka.lk",
+    "http://13.233.60.241",
 ]
 
 
